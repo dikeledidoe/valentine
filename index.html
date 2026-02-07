@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Surprise for You ❤️</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+       <div id="question-box">
+    <div class="video-container">
+        <video id="display-video" autoplay muted loop playsinline >
+            <source id="video-source" src="video/video7.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <h1 id="question-text"> Do You Think Am A Good Kisser?</h1>
+    
+    <div id="button-group" class="buttons">
+        <button onclick="handleAnswer('yes')" class="btn yes-btn">Yes!</button>
+        <button onclick="handleAnswer('no')" class="btn no-btn">No</button>
+    </div>
+
+    <p id="response-message"></p>
+    
+    <button id="next-btn" class="btn next-btn hidden" onclick="nextQuestion()">Next Question</button>
+</div>
+
+        <div id="final-reveal" class="hidden">
+            <div class="heart">❤️</div>
+            <h2>I knew you'd say yes!</h2>
+            <div class="love-letter">
+                <p>My Favorite Man,</p>
+                <p>Sometimes I catch myself just looking at you and wondering how I got so lucky. It isn't just the big moments that make me love you it’s the way you make me feel safe in a chaotic world and the quiet kindness you show every day. You are my favorite person, my safest harbor, and the best part of my reality. Thank you for being exactly who you are. I love you more than words can actually catch.</p>
+                <div class="photo-grid">
+                    <img src="./images/photo1.jpeg" alt="Memory 1">
+                    <img src="./images/photo2.jpeg" alt="Memory 2">
+                    <img src="./images/photo3.jpeg" alt="Memory 3">
+                </div>
+                <p>Forever yours. ❤️</p>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
